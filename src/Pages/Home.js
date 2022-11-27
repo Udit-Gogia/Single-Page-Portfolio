@@ -60,29 +60,22 @@ export default function Home() {
     <div className="flex flex-col bg-offWhite justify-between h-screen w-screen ">
       <Navbar />
 
-      <section className="flex flex-col">
-        <div className="flex items-center">
-          <section className="p-4 basis-3/5 flex flex-col gap-4 ml-48 mb-40 w-fit">
-            <h1 className="Amulya-Bold sm:text-4xl md:text-7xl capitalize text-lightOrange tracking-wide max-w-fit lg:ml-6">
-              Hey, I'm
-            </h1>
-            <p className="Synonym-Reg text-9xl text-charcoal w-fit lg:ml-4">
-              Udit Gogia
-            </p>
-          </section>
-
-          <section className="basis-2/5 flex flex-col items-center">
-            <img
-              src={ImgUdit}
-              alt="img-udit"
-              width={"400px"}
-              height={"400px"}
-            />
-          </section>
-        </div>
-        <section>
-          <Wave />
+      <div className="flex items-center">
+        <section className="p-4 basis-3/5 flex flex-col gap-8 ml-48 mb-40 w-fit">
+          <h1 className="Amulya-Bold sm:text-4xl md:text-7xl capitalize text-lightOrange tracking-wide max-w-fit lg:ml-6 selection:bg-charcoal">
+            Hey, I'm
+          </h1>
+          <p className="Synonym-Reg text-9xl text-charcoal w-fit lg:ml-4 selection:bg-lightOrange">
+            Udit Gogia
+          </p>
         </section>
+
+        <section className="basis-2/5 flex flex-col items-center ">
+          <img src={ImgUdit} alt="img-udit" width={"400px"} height={"400px"} />
+        </section>
+      </div>
+      <section>
+        <Wave />
       </section>
     </div>
   );
