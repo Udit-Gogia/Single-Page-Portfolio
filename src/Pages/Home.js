@@ -1,9 +1,9 @@
 import Navbar from "../Components/Navbar";
 import ImgUdit from "../Assets/Images/udit.png";
-import ImgBlob from "../Assets/Images/blob.png";
+
 export const Wave = () => {
   return (
-    <div>
+    <div className="relative lg:bottom-36 w-screen overflow-hidden">
       <svg
         className="waves"
         xmlns="http://www.w3.org/2000/svg"
@@ -34,8 +34,14 @@ export const Wave = () => {
           <use
             xlinkHref="#gentle-wave"
             x={48}
+            y={2}
+            fill="rgba(54, 69, 79,0.5)"
+          />
+          <use
+            xlinkHref="#gentle-wave"
+            x={48}
             y={4}
-            fill="rgba(54, 69, 79,0.8)"
+            fill="rgba(54, 69, 79,0.7)"
           />
           <use
             xlinkHref="#gentle-wave"
@@ -49,37 +55,35 @@ export const Wave = () => {
   );
 };
 
-export const OrangeBlob = () => {
-  return (
-    <div className="flex flex-col items-center ">
-      <div className="absolute top-6">
-        <img src={ImgUdit} alt="img-udit" width={"1300px"} height={"1300px"} />
-      </div>
-
-      <div className="">
-        <img src={ImgBlob} alt="img-udit" width={"400px"} height={"400px"} />
-      </div>
-    </div>
-  );
-};
-
 export default function Home() {
   return (
-    <div className="flex flex-col bg-offWhite justify-between h-screen ">
+    <div className="flex flex-col bg-offWhite justify-between h-screen w-screen ">
       <Navbar />
-      <div className="flex m-4 gap-4 my-8 items-center w-screen h-screen">
-        <div className="p-4 basis-3/5 flex flex-col gap-4">
-          <h1 className="Amulya-Bold text-7xl capitalize text-lightOrange tracking-wide">
-            Hey, I'm
-          </h1>
-          <p className="Synonym-Reg text-9xl text-charcoal">Udit Gogia</p>
-        </div>
 
-        <div className="p-4 basis-2/5">
-          <OrangeBlob />
+      <section className="flex flex-col">
+        <div className="flex items-center">
+          <section className="p-4 basis-3/5 flex flex-col gap-4 ml-48 mb-40 w-fit">
+            <h1 className="Amulya-Bold sm:text-4xl md:text-7xl capitalize text-lightOrange tracking-wide max-w-fit lg:ml-6">
+              Hey, I'm
+            </h1>
+            <p className="Synonym-Reg text-9xl text-charcoal w-fit lg:ml-4">
+              Udit Gogia
+            </p>
+          </section>
+
+          <section className="basis-2/5 flex flex-col items-center">
+            <img
+              src={ImgUdit}
+              alt="img-udit"
+              width={"400px"}
+              height={"400px"}
+            />
+          </section>
         </div>
-      </div>
-      <Wave />
+        <section>
+          <Wave />
+        </section>
+      </section>
     </div>
   );
 }
