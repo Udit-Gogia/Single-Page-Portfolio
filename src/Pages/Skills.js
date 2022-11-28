@@ -68,30 +68,40 @@ const skills = [
 export const SkillCard = ({ skillName, img }) => {
   return (
     <div
-      className="p-4 flex flex-col items-center justify-center"
+      className="p-4 flex flex-col items-center justify-center gap-2"
       style={{
         backgroundImage: `url(${IconBlo})`,
         height: "15rem",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "30rem",
+        backgroundSize: "17rem",
         backgroundPosition: "bottom",
       }}
     >
-      <img src={img} alt="skill-img" width={"100px"} />
-      <p className="text-offWhite text-lg Synonym-Reg">{skillName}</p>
+      <img
+        src={img}
+        alt="skill-img"
+        width={"100px"}
+        className="select-none pointer-events-none"
+      />
+      <p className="text-offWhite text-lg Synonym-Reg selection:bg-offWhite selection:text-charcoal">
+        {skillName}
+      </p>
     </div>
   );
 };
 
 export default function Skills() {
   return (
-    <div className="flex flex-col bg-offWhite justify-between py-16">
+    <div
+      className="flex flex-col bg-offWhite justify-between pt-16 pb-28"
+      id="skills"
+    >
       <section className="px-32">
         <h1 className="Amulya-Bold sm:text-4xl md:text-7xl capitalize text-lightOrange tracking-wide max-w-fit selection:bg-lightOrange selection:text-charcoal">
           My Skills
         </h1>
 
-        <div className="grid grid-cols-3 gap-4 my-12">
+        <div className="grid grid-cols-4 ">
           {skills.map((skill, index) => {
             return (
               <SkillCard key={index} skillName={skill.name} img={skill.icon} />

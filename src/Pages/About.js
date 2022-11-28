@@ -12,7 +12,7 @@ const AboutSelf = ({ desc, icon }) => {
         src={icon}
         alt="icon-aboutSelf"
         width="50px"
-        className="select-none"
+        className="select-none pointer-events-none"
       />
       <p className="text-offWhite Synonym-Reg  text-xl tracking-wide selection:bg-offWhite selection:text-charcoal">
         {desc}
@@ -23,7 +23,7 @@ const AboutSelf = ({ desc, icon }) => {
 
 export default function About() {
   return (
-    <div className="bg-charcoal  py-20">
+    <div className="bg-charcoal  py-20" id="about">
       <section className="px-32 flex flex-col gap-10 ">
         <h1 className="Amulya-Bold sm:text-4xl md:text-7xl capitalize text-lightOrange tracking-wide max-w-fit selection:bg-lightOrange selection:text-charcoal">
           About Me

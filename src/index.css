@@ -20,6 +20,10 @@
   src: url(./Assets/Fonts/Synonym/Fonts/OTF/Synonym-Bold.otf);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .Amulya-Reg {
   font-family: "Amulya";
 }
@@ -36,7 +40,7 @@
 .waves {
   position: relative;
   width: 100%;
-  height: 20vh;
+  height: 50vh;
   bottom: 0;
   margin-bottom: -7px;
   min-height: 100px;
