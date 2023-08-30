@@ -1,6 +1,7 @@
 export default function Navbar() {
+
   return (
-    <div className="p-4 bg-offWhite flex justify-center gap-10">
+    <nav className="p-4 fixed w-full z-10  flex justify-center gap-10 bg-offWhite">
       <a href="#about" className="nav-option">
         About
       </a>
@@ -14,6 +15,6 @@ export default function Navbar() {
       <a href="#projects" className="nav-option">
         Projects
       </a>
-    </div>
+    </nav>
   );
 }

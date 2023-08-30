@@ -125,4 +125,11 @@
   left: 0;
 }
 
+.text-skill {
+  -webkit-text-fill-color: #f5f1ee;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #36454f;
+  text-shadow: 4px 4px #ecc1a1;
+}
+
 @tailwind utilities;

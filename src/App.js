@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="w-screen h-screen flex overflow-x-hidden ">
       <Sidebar />
-      <div className="flex flex-col">
+      <div className="">
         <Home />
         <About />
         <Skills />
