@@ -33,14 +33,14 @@ export default function About() {
             <AboutSelf
               icon={IconEducation}
               desc={
-                "I'm final year student majoring in CSE AI-ML in SRMIST KTR."
+                "I'm graduate in Computer Science and Engineering with specialization in AI-ML from SRMIST KTR."
 
               }
             />
             <AboutSelf
               icon={IconCode}
               desc={
-                "My experience includes 2 years of MERN-Stack Development and a variety of projects along with an Intership in NextJS."
+                "My experience includes 2+ years of MERN-Stack Development and a variety of projects."
               }
             />
             <AboutSelf
@@ -59,7 +59,7 @@ export default function About() {
             <AboutSelf
               icon={IconAim}
               desc={
-                "Beyond coding, I'm also quite passionate about crafting user-friendly and visually appealing experiences through UI/UX design."
+                "Beyond coding, I'm passionate about crafting user-friendly and visually appealing experiences through UI/UX design."
               }
             />
 
